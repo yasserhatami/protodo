@@ -1,0 +1,23 @@
+<template>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="text-center">
+            <h1 class="justify-content-between">VUEX STATE MANAGER</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          exercitationem, officia ipsam eaque temporibus excepturi ullam,
+          placeat optio aspernatur rerum dolor ut nostrum adipisci, aut quam. Ad
+          quam dicta aperiam?
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {};
+</script>
+<style>
+  
+</style>
