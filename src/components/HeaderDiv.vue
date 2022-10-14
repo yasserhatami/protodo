@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-md bg-primary shadow">
+  <nav class="navbar navbar-expand-md shadow p-0">
     <div class="container-fluid">
-      <router-link id="navBrand" class="navbar-brand" to="/">protodo</router-link>
+      <router-link id="navBrand" class="navbar-brand" to="/">ProToDo</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -14,12 +14,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item ">
-             <router-link to="/" id="homebtn" class="mt-sm-3 animated-border-button nav-link active">Home</router-link>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
+          <li class="nav-item mt-1 mt-lg-0 ">
+             <router-link to="/" id="homebtn" class=" animated-border-button nav-link active">Home</router-link>
           </li>
-           <li class="nav-item">
-            <router-link to="/tasks" id="taskbtn" class="mt-sm-3 animated-border-button nav-link active">tasks</router-link>
+           <li class="nav-item mt-1 mt-lg-0 ">
+            <router-link to="/tasks" id="taskbtn" class="  animated-border-button nav-link active">Tasks</router-link>
           </li>
         </ul>
       </div>
@@ -34,17 +34,29 @@ export default {};
 <style scoped>
 #homebtn{
 
-  padding: 0;
-  color: gray;
-
-}
-#taskbtn{
-   padding: 0;
-  color: gray;
+  padding: 0 3px ;
+  color:  whitesmoke;
   margin-left: 20px;
 }
+@media only screen and (max-width: 768px) {
+ #homebtn {
+    margin-left: 0;
+  }
+}
+#taskbtn{
+   padding: 0 3px ;
+   
+  color: whitesmoke;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #taskbtn {
+    margin-left: 0;
+  }
+}
 .animated-border-button {
-  background-color: #263059;
+  background-color: #190061;
   border: none;
   color: #ffffff;
   outline: none;
@@ -63,13 +75,13 @@ export default {};
 }
 
 .animated-border-button:before {
-  border-top: 2px solid #263059;
+  border-top: 2px solid #4f5fa0;
   right: 0;
   top: -4px;
 }
 
 .animated-border-button:after {
-  border-bottom: 2px solid #263059;
+  border-bottom: 2px solid #4f5fa0;
   bottom: -4px;
   left: 0;
 }
@@ -80,6 +92,11 @@ export default {};
 }
 #navBrand{
   font-size: x-large;
-  font-weight: 600;
+  font-weight: 700;
+  color: #3c09d4 !important;
+}
+.navbar{
+  background-color: #0c0032;
+  
 }
 </style>
