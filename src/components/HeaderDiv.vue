@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-md bg-primary shadow">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">protodo</a>
+      <router-link id="navBrand" class="navbar-brand" to="/">protodo</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -77,5 +77,9 @@ export default {};
 .animated-border-button:hover:before,
 .animated-border-button:hover:after {
   width: 100%;
+}
+#navBrand{
+  font-size: x-large;
+  font-weight: 600;
 }
 </style>
