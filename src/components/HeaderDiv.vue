@@ -16,10 +16,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
           <li class="nav-item mt-1 mt-lg-0 ">
-             <router-link to="/" id="homebtn" class=" animated-border-button nav-link active">Home</router-link>
+             <router-link to="/" id="homebtn" class=" animated-border-button nav-link">Home</router-link>
           </li>
            <li class="nav-item mt-1 mt-lg-0 ">
-            <router-link to="/tasks" id="taskbtn" class="  animated-border-button nav-link active">Tasks</router-link>
+            <router-link to="/tasks" id="taskbtn" class="  animated-border-button nav-link">Tasks</router-link>
           </li>
         </ul>
       </div>
@@ -98,5 +98,8 @@ export default {};
 .navbar{
   background-color: #0c0032;
   
+}
+.router-link-active{
+  color: rgb(240, 83, 83) !important;
 }
 </style>
