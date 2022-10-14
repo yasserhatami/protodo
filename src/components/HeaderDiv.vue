@@ -15,8 +15,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a id="homebtn" class="mt-sm-3 animated-border-button nav-link active" aria-current="page" href="#">Home</a>
+          <li class="nav-item ">
+             <router-link to="/" id="homebtn" class="mt-sm-3 animated-border-button nav-link active">Home</router-link>
+          </li>
+           <li class="nav-item">
+            <router-link to="/tasks" id="taskbtn" class="mt-sm-3 animated-border-button nav-link active">tasks</router-link>
           </li>
         </ul>
       </div>
@@ -34,6 +37,11 @@ export default {};
   padding: 0;
   color: gray;
 
+}
+#taskbtn{
+   padding: 0;
+  color: gray;
+  margin-left: 20px;
 }
 .animated-border-button {
   background-color: #263059;
