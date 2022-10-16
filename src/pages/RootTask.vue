@@ -8,8 +8,16 @@
   </div>
 </template>
 <script>
-export default {};
+import { useStore } from "vuex";
+export default {
+  setup() {
+    const store = useStore();
+    function fetchTasks() {
+      store.dispatch("fetchTasks");
+    }
+    fetchTasks();
+  },
+};
 </script>
 <style>
-  
 </style>

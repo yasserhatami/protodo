@@ -1,8 +1,16 @@
 import { createStore } from "vuex";
+import axios from "axios"
 
 const store = createStore({
     state : {
-        count : 2
+        tasks : []
+    },
+    actions : {
+        async  fetchTasks(){
+            const response = await axios.get("https://jsonplaceholder.typicode.com/todos")
+
+            console.log(response)
+        }
     }
 })
 
