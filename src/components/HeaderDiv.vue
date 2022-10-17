@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-md shadow p-0">
     <div class="container-fluid">
       <router-link id="navBrand" class="navbar-brand" to="/">ProToDo</router-link>
-      <button
+      <button id="collapsbtn"
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -101,5 +101,12 @@ export default {};
 }
 .router-link-active{
   color: rgb(240, 83, 83) !important;
+}
+#collapsbtn{
+  background-color: #3c09d4;
+}
+.navbar-toggler-icon{
+   height: 10px;
+   width: 15px;
 }
 </style>
