@@ -12,7 +12,10 @@
                 </div>
             </div>
              <div class="col-auto">
-                <button class="btn btn-dark">Create</button>
+                <button class="btn btn-dark">
+                    Create
+                    <span v-if="loading" class="spinner-border spinner-border-sm"></span>
+                </button>
             </div>
           </form>
         
@@ -28,18 +31,20 @@ export default {
         const store = useStore();
         const title = ref("");
         const titleErrorText = ref("")
+        const loading = ref(false);
 
-        function storeTask(){
+        async function storeTask(){
             if(title.value == ""){
                 titleErrorText.value = "title is required"
-                console.log("hasn")
             }else{
+                loading.value = true;
                 titleErrorText.value = "";
-                store.dispatch("storeTask",title.value)
+                await store.dispatch("storeTask",title.value)
+                loading.value = false;
             }
         }
 
-        return{storeTask,title,titleErrorText}
+        return{storeTask,title,titleErrorText,loading}
     }
 };
 </script>
