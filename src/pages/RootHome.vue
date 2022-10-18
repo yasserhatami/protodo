@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col">
         <div class="text-center">
-            <h1 class="justify-content-between">VUEX STATE MANAGER</h1>
+            <h1 class="justify-content-between">VUEX STATE MANAGER with YASSER</h1>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
