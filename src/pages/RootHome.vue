@@ -11,13 +11,20 @@
           placeat optio aspernatur rerum dolor ut nostrum adipisci, aut quam. Ad
           quam dicta aperiam?
         </p>
+        <blink></blink>
       </div>
     </div>
   </div>
 </template>
+
 <script>
-export default {};
+import blink from '../components/CssBlink.vue'
+export default {
+  components: {
+    blink
+  }
+};
 </script>
 <style>
-  
+
 </style>
