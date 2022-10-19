@@ -4,12 +4,15 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h6>filter tasks</h6>
-                    <select v-model="number" @change = "filterTasks" class="form-select form-select-sm">
+                    
+                    <select  v-model="number" @change = "filterTasks" class="form-select form-select-sm ">
+                      <option value="" selected>Open this select menu</option>
                       <option value="5">5</option>
                       <option value="10">10</option>
                       <option value="20">20</option>
                       <option value="50">50</option>
                     </select>
+
                 </div>
             </div>
         </div>
@@ -23,7 +26,7 @@ export default {
         const store = useStore()
         const number = ref()
         function filterTasks(){
-            store.dispatch("filterTasks",number.value)
+            store.dispatch("task/filterTasks",number.value)
         }
 
         return {filterTasks,number}
